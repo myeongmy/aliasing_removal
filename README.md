@@ -1,4 +1,8 @@
-# CNNGeometric PyTorch implementation
+# Image warping code for Aliasing removal
+- 1차 test: 2019.05.22
+
+
+### CNNGeometric PyTorch implementation
 
 ![](http://www.di.ens.fr/willow/research/cnngeometric/images/teaser.png)
 
@@ -18,26 +22,26 @@ If you use this code in your project, please cite use using:
 }
 ````
 
-## Dependencies ###
+#### Dependencies ###
   - Python 3
   - pytorch > 0.2.0, torchvision
   - numpy, skimage (included in conda)
 
-## Getting started ###
+#### Getting started ###
   - demo.py demonstrates the results on the ProposalFlow dataset
   - train.py is the main training script
   - eval_pf.py evaluates on the ProposalFlow dataset
   
-## Trained models ###
+#### Trained models ###
 
-#### Using Streetview-synth dataset + VGG
+###### Using Streetview-synth dataset + VGG
   - [[Affine]](http://www.di.ens.fr/willow/research/cnngeometric/trained_models/pytorch/best_streetview_checkpoint_adam_affine_grid_loss.pth.tar), [[TPS]](http://www.di.ens.fr/willow/research/cnngeometric/trained_models/pytorch/best_streetview_checkpoint_adam_tps_grid_loss.pth.tar)
   - Results on PF: `PCK affine: 0.472`, `PCK tps: 0.513`, `PCK affine+tps: 0.572`
 
-#### Using Pascal-synth dataset  + VGG
+###### Using Pascal-synth dataset  + VGG
   - [[Affine]](http://www.di.ens.fr/willow/research/cnngeometric/trained_models/pytorch/best_pascal_checkpoint_adam_affine_grid_loss.pth.tar), [[TPS]](http://www.di.ens.fr/willow/research/cnngeometric/trained_models/pytorch/best_pascal_checkpoint_adam_tps_grid_loss.pth.tar)
   - Results on PF: `PCK affine: 0.478`, `PCK tps: 0.428`, `PCK affine+tps: 0.568`
 
-#### Using Pascal-synth dataset  + ResNet-101
+###### Using Pascal-synth dataset  + ResNet-101
   - [[Affine]](http://www.di.ens.fr/willow/research/cnngeometric/trained_models/pytorch/best_pascal_checkpoint_adam_affine_grid_loss_resnet_random.pth.tar), [[TPS]](http://www.di.ens.fr/willow/research/cnngeometric/trained_models/pytorch/best_pascal_checkpoint_adam_tps_grid_loss_resnet_random.pth.tar)
   - Results on PF: `PCK affine: 0.559`, `PCK tps: 0.582`, `PCK affine+tps: 0.676`
